@@ -1,14 +1,21 @@
 import { useState } from 'react'
-import './App.css'
+// import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import TodoList from './components/Todo-List.jsx'
+// import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Meine-Todo-App</h1>
-        <TodoList />
-      </header>
-    </div>
-  )
+  const [count, setCount] = useState(0)
 
-  export default App;
+  return (
+    <>
+    <div className='mt-10 flex min-h-screen w-full flex-col justify-start bg-gray-200 bg-gradient-to-bl from-[#0093E9] to-[#80D0C7]">
+    <div class="container mx-auto p-4'>
+
+  <TodoList/>
+    </div>
+    </>
+  )
+}
+
+export default App
